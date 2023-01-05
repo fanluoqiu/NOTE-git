@@ -8,11 +8,14 @@
 2）设置用户信息  
  <p> git config --global user.name "yourname" <p>
  <p> git config --global user.email "your email" <p>  
+如果需要查看用户信息则输入下面的指令 ：
+ <p> git config --global user.name "yourname"  <p>
+ <p> git config --global user.email "your email" <p>
+#### 2.1.2 配置SSH密钥
 
->查看用户信息  
-> <p> git config --global user.name "yourname"  <p>
-> <p> git config --global user.email "your email" <p>
-#### 2.1.2 为常用指令配置别名
+>SSH (Secure Shell) 是一种安全的远程登录协议，可以让你通过安全的加密连接进行远程登录。如果你想通过 SSH 连接到 Github，首先需要创建一对 SSH 密钥（即公钥和私钥），然后将公钥上传到 Github。现在的代码管理平台例如github、gitliab支持http协议或者ssh协议。HTTPS利于匿名访问，适合开源项目可以方便被别人克隆和读取(但没有push权限)；而SSH协议使用公钥认证比较适合内部项目。
+
+#### 2.1.3 为常用指令配置别名
 有些指令使用频繁，但是指令非常长，我们可以给这些指令设置别名
 1）打开用户目录，**在目录下**GitBash执行`touch ~/.bashrc`
 2）在`.bashrc`文件中输入`alias 设置的快捷指令='原指令' `  
