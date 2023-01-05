@@ -6,11 +6,11 @@
 #### 2.1.1 基本配置  
 1）打开Git Bash  
 2）设置用户信息  
- <p> git config --global user.name "yourname" <p>
- <p> git config --global user.email "your email" <p>  
-如果需要查看用户信息则输入下面的指令 ：
- <p> git config --global user.name "yourname"  <p>
- <p> git config --global user.email "your email" <p>
+**git config --global user.name "yourname"**  
+**git config --global user.email "your email"**  
+如果需要查看用户信息则输入下面的指令 ：  
+**git config --global user.name "yourname"**    
+**git config --global user.email "your email"**
 #### 2.1.2 配置SSH密钥
 
 >SSH (Secure Shell) 是一种安全的远程登录协议，可以让你通过安全的加密连接进行远程登录。如果你想通过 SSH 连接到 Github，首先需要创建一对 SSH 密钥（即公钥和私钥），然后将公钥上传到 Github。现在的代码管理平台例如github、gitliab支持http协议或者ssh协议。HTTPS利于匿名访问，适合开源项目可以方便被别人克隆和读取(但没有push权限)；而SSH协议使用公钥认证比较适合内部项目。
