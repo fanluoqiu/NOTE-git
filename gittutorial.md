@@ -3,7 +3,7 @@ html:
   embed_local_images: true
   embed_svg: true
   offline: false
-  toc: false
+  toc: true
 
 print_background: false
 ---
