@@ -58,9 +58,15 @@ Git工作目录下对文件的**修改**（增加、删除、更新）会存在�
         - `--graph` 以图的形式显示
 >在2.1.2 为常用指令配置别名`**git-log**就包含了这个参数，所以后续可以直接使用指令**git-log**替代
 
-### 📌2.3.5 版本回退
+### 📌2.3.5 版本切换(reset)
 - 作用：版本切换
 - 命令形式：`git reset --hard commitID`
     commitID可以用`git-log`或者`git log`指令查看
 >如果要查看已经删除的记录，可以使用`git reflog`
-### 2.3.6 添加文件至忽略列表
+### 📌2.3.5 版本切换（restore）
+- 作用：版本切换
+- 命令形式：`git reset --hard commitID`
+    commitID可以用`git-log`或者`git log`指令查看
+
+
+
