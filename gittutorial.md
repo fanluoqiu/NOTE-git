@@ -1,12 +1,21 @@
-# git命令行使用教程
-- [git命令行使用教程](#git命令行使用教程)
+---
+html:
+  embed_local_images: true
+  embed_svg: true
+  offline: false
+  toc: false
+
+print_background: false
+---
+# Git学习笔记
+- [Git学习笔记](#git学习笔记)
   - [1 概述](#1-概述)
   - [2 Git常用命令](#2-git常用命令)
     - [2.1 Git环境配置](#21-git环境配置)
       - [2.1.1 基本配置](#211-基本配置)
       - [2.1.2 配置SSH密钥](#212-配置ssh密钥)
       - [2.1.3 为常用指令配置别名](#213-为常用指令配置别名)
-    - [2.2 创建一个本地仓库（repository）](#22-创建一个本地仓库repository)
+    - [2.2 创建一个*本地仓库*（*repository*）](#22-创建一个本地仓库repository)
     - [2.3 基础操作指令](#23-基础操作指令)
     - [2.3.1 查看修改的状态(status)](#231-查看修改的状态status)
     - [2.3.2 将工作区内容添加到暂存区(add)](#232-将工作区内容添加到暂存区add)
@@ -14,31 +23,34 @@
     - [2.3.4 查看提交日志（log）](#234-查看提交日志log)
     - [2.3.5 版本切换(reset)](#235-版本切换reset)
     - [2.3.6 撤销更改（restore）](#236-撤销更改restore)
-
 ## 1 概述  
 ## 2 Git常用命令  
 ### 2.1 Git环境配置  
 #### 2.1.1 基本配置  
 1）打开Git Bash  
-2）设置用户信息  
-**git config --global user.name "yourname"**  
-**git config --global user.email "your email"**  
+2）设置用户信息
+
+```
+git config --global user.name "yourname" 
+git config --global user.email "your email" 
+```
 如果需要查看用户信息则输入下面的指令 ：  
+````
 **git config --global user.name "yourname"**    
 **git config --global user.email "your email"**
+````
 #### 2.1.2 配置SSH密钥
-
 >SSH (Secure Shell) 是一种安全的远程登录协议，可以让你通过安全的加密连接进行远程登录。如果你想通过 SSH 连接到 Github，首先需要创建一对 SSH 密钥（即公钥和私钥），然后将公钥上传到 Github。现在的代码管理平台例如github、gitliab支持http协议或者ssh协议。HTTPS利于匿名访问，适合开源项目可以方便被别人克隆和读取(但没有push权限)；而SSH协议使用公钥认证比较适合内部项目。
 
 #### 2.1.3 为常用指令配置别名
-有些指令使用频繁，但是指令非常长，我们可以给这些指令设置别名
+有些指令使用频繁，但是指令非常长，我们可以给这些指令设置别名  
 1）打开用户目录，**在目录下**GitBash执行`touch ~/.bashrc`
 2）在`.bashrc`文件中输入`alias 设置的快捷指令='原指令' `  
 
 如：
 
 ![\3.png](3.png "设置git-log")
-### 2.2 创建一个<u>本地仓库</u>（repository）
+### 2.2 创建一个*本地仓库*（*repository*）
  要使用Git对项目进行版本控制，我们需要先使用`git init`初始化
  1）在项目目录下打开GitBash
  2）执行命令`git init`
@@ -52,7 +64,7 @@ Git工作目录下对文件的**修改**（增加、删除、更新）会存在�
 ![5.png](5.png )
 
 ### 2.3.1 查看修改的状态(status)
-- 作用：查看<u>工作区</u>（workspace）或者<u>暂存区</u>(index)的状态
+- 作用：查看*工作区*（*workspace*）或者*暂存区*(*index*)的状态
 - 命令形式：`git status`
 ### 2.3.2 将工作区内容添加到暂存区(add)
 - 作用：添加工作区一个或者多个文件的修改到暂存区
@@ -72,6 +84,7 @@ Git工作目录下对文件的**修改**（增加、删除、更新）会存在�
         - `--pretty=ontline` 将提交信息显示为一行
         - `--graph` 以图的形式显示
 >在2.1.2 为常用指令配置别名`**git-log**就包含了这个参数，所以后续可以直接使用指令**git-log**替代
+
 
 ### 2.3.5 版本切换(reset)
 - 作用：版本切换
