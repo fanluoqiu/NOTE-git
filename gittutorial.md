@@ -1,3 +1,13 @@
+---
+html:
+  embed_local_images: true
+  embed_svg: true
+  offline: false
+  toc: true
+
+print_background: false
+---
+
 # Git学习笔记
 - [Git学习笔记](#git学习笔记)
   - [1 概述](#1-概述)
